@@ -19,12 +19,18 @@ import django_web.views
 
 urlpatterns = [
     path('', django_web.views.index),
-    path('admin/', admin.site.urls),
-    path('hello/', django_web.views.hello),
-    path('helloRedirect/', django_web.views.helloRedirect),
-    path('helloRender/', django_web.views.helloRender),
-    path('index/', django_web.views.index),
-    path('loginPage/', django_web.views.loginPage),
-    path('login/', django_web.views.login),
+    path('admin', admin.site.urls),
+    path('hello', django_web.views.hello),
+    path('helloRedirect', django_web.views.helloRedirect),
+    path('helloRender', django_web.views.helloRender),
+    path('index', django_web.views.index),
+    path('loginPage', django_web.views.loginPage),
+    path('login', django_web.views.login),
+    path('forgetPassword', django_web.views.forgetPassword),
+    path('newUser', django_web.views.newUser),
+    path('addUser', django_web.views.addUser),
+
+
+
 
 ]

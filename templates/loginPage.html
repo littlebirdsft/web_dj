@@ -21,11 +21,12 @@
 				<form  id="loginForm" role="form" >
                     {% csrf_token %}
 					<span  class="word">Login name:</span>
-					<input class="inputtext" name="username" type="text" id="username" size="20" required autofocus/>
+					<input class="inputtext" name="username" type="text" id="username" size="20" value={{ user }} required autofocus />
 					<span  class="word">Password:</span>
 					<input class="inputtext" name="password" type="password" id="password" size="20" required/>
 					<button class="loginbtn"  type="button"  id="login"><strong>Login</strong></button>
 					<span id="errorMsg" style="color:#ff0000;font-size:12px;"></span>
+                    <a href ="/forgetPassword" rel="external nofollow" class = "forgetbtn"> forget password? </a>
 				</form>
 			</div>
 		</div>

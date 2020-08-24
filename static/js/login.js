@@ -29,7 +29,7 @@ function Login() {
 		if ($("#username").val() != "" && $("#password").val() != "") {
 			$.ajax({
 				type:"POST",
-			    url:"/login/",
+			    url:"/login",
 			    async:false,
 			    data:{
 					"username" : $("#username").val(),
